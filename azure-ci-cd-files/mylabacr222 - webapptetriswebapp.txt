@@ -1,0 +1,15 @@
+{
+    "type": "Microsoft.ContainerRegistry/registries/webhooks",
+    "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.ContainerRegistry/registries/mylabacr222/webhooks/webapptetriswebapp",
+    "name": "webapptetriswebapp",
+    "location": "uksouth",
+    "tags": {},
+    "properties": {
+        "status": "enabled",
+        "scope": "tetris-game-app:latest",
+        "actions": [
+            "push"
+        ],
+        "provisioningState": "Succeeded"
+    }
+}

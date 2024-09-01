@@ -1,0 +1,75 @@
+{
+    "name": "UBUNTUVM02",
+    "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Compute/virtualMachines/UBUNTUVM02",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "uksouth",
+    "properties": {
+        "hardwareProfile": {
+            "vmSize": "Standard_D2s_v3"
+        },
+        "provisioningState": "Succeeded",
+        "vmId": "78d27637-fde2-45fa-9794-b98e1d654bd3",
+        "additionalCapabilities": {
+            "hibernationEnabled": false
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "ubuntu-24_04-lts",
+                "sku": "server",
+                "version": "latest",
+                "exactVersion": "24.04.202408210"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "UBUNTUVM02_OsDisk_1_18e12db7f9e54247ba6a8247242957c4",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "Premium_LRS",
+                    "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Compute/disks/UBUNTUVM02_OsDisk_1_18e12db7f9e54247ba6a8247242957c4"
+                },
+                "deleteOption": "Delete",
+                "diskSizeGB": 30
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "UBUNTUVM02",
+            "adminUsername": "azureadmin",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": false,
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "securityProfile": {
+            "uefiSettings": {
+                "secureBootEnabled": true,
+                "vTpmEnabled": true
+            },
+            "securityType": "TrustedLaunch"
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Network/networkInterfaces/ubuntuvm02679",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "name": "ubuntuvm02679",
+    "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Network/networkInterfaces/ubuntuvm02679",
+    "etag": "W/\"7ea6ea00-2043-448c-b1ac-e7aec8697830\"",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "26e1ab30-62fd-4879-b0b4-26b07a83b668",
+        "ipConfigurations": [
+            {
+                "name": "ipconfig1",
+                "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Network/networkInterfaces/ubuntuvm02679/ipConfigurations/ipconfig1",
+                "etag": "W/\"7ea6ea00-2043-448c-b1ac-e7aec8697830\"",
+                "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Network/publicIPAddresses/UBUNTUVM02-ip",
+                        "properties": {
+                            "deleteOption": "Delete"
+                        }
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Network/virtualNetworks/UBUNTUVM02-vnet/subnets/default"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                }
+            }
+        ],
+        "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "qxyepkgdp55ubgcmkr0fcmwa2g.zx.internal.cloudapp.net"
+        },
+        "macAddress": "60-45-BD-10-A9-CD",
+        "enableAcceleratedNetworking": false,
+        "vnetEncryptionSupported": false,
+        "enableIPForwarding": false,
+        "disableTcpStateTracking": false,
+        "networkSecurityGroup": {
+            "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Network/networkSecurityGroups/UBUNTUVM02-nsg"
+        },
+        "primary": true,
+        "virtualMachine": {
+            "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.Compute/virtualMachines/UBUNTUVM02"
+        },
+        "hostedWorkloads": [],
+        "tapConfigurations": [],
+        "nicType": "Standard",
+        "allowPort25Out": false,
+        "auxiliaryMode": "None",
+        "auxiliarySku": "None"
+    },
+    "type": "Microsoft.Network/networkInterfaces",
+    "location": "uksouth",
+    "kind": "Regular"
+}

@@ -1,0 +1,31 @@
+{
+    "sku": {
+        "name": "Basic",
+        "tier": "Basic"
+    },
+    "type": "Microsoft.ContainerRegistry/registries",
+    "id": "/subscriptions/9d164e57-b451-49ce-a850-9bbcbbc7d310/resourceGroups/MyLab-RG/providers/Microsoft.ContainerRegistry/registries/mylabacr222",
+    "name": "mylabacr222",
+    "location": "uksouth",
+    "tags": {},
+    "properties": {
+        "loginServer": "mylabacr222.azurecr.io",
+        "creationDate": "2024-09-01T19:37:58.5795169Z",
+        "provisioningState": "Succeeded",
+        "adminUserEnabled": true,
+        "policies": {
+            "quarantinePolicy": {
+                "status": "disabled"
+            },
+            "trustPolicy": {
+                "type": "Notary",
+                "status": "disabled"
+            },
+            "retentionPolicy": {
+                "days": 7,
+                "lastUpdatedTime": "2024-09-01T19:38:05.819903+00:00",
+                "status": "disabled"
+            }
+        }
+    }
+}
